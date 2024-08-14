@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Semester 5 TSPD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="schedule-container">
+      <h1>Jadwal Perkuliahan TSPD Semester 5 - Program Studi TSPD - Departemen Teknologi Kebumian - Universitas Gadjah Mada</h1>
+
+      <!-- Tanggal dan Waktu Real-Time -->
+      <div id="date-time" class="date-time"></div>
+      <br />
+
+      <!-- Jadwal Hari Ini -->
+      <div id="current-day-schedule" class="schedule-table"></div>
+      <button id="show-full-schedule" onclick="showFullSchedule()">Show Full Schedule</button>
+      <br />
+
+      <!-- Jadwal Penuh -->
+      <table id="full-schedule-table" class="schedule-table" style="display: none">
+        <thead>
+          <tr>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jumat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="praktikum-survei">07:00 - 13:50<br />Praktikum Survei Rekayasa<br />Lab. Geomatika</td>
+            <td class="pkn">07:30 - 09:00<br />Pendidikan Kewarganegaraan<br />Ruang Gedung C Lantai 2 Filsafat</td>
+            <td class="praktikum-kadastral">07:00 - 10:50<br />Praktikum Pemetaan Kadastral<br />Lab. Geomatika</td>
+            <td class="kadastral">08:00 - 08:50<br />Pemetaan Kadastral<br />Hall GP</td>
+            <td class="ide-kreatif">13:00 - 15:50<br />Ide Kreatif dan Kewirausahaan<br />Hall GP</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="pancasila">11:00 - 12:30<br />Pancasila<br />Ruang C205 Filsafat</td>
+            <td class="survei">13:00 - 14:50<br />Survei Rekayasa<br />Ruang Hall GP</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="agama">15:00 - 16:30<br />Pendidikan Agama Islam<br />Gedung C Lantai 2 Filsafat</td>
+            <td class="bahasa">16:00 - 17:40<br />Bahasa Indonesia<br />Ruang Soegondo 226+227</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Kata Motivasi Harian -->
+    <footer>
+      <p id="daily-motivation"></p>
+      <p>&copy; 2024 Didan Angga Pratama</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
